@@ -1,0 +1,116 @@
+/*header & video background styles*/
+#top-background #main-video{
+    position: static;
+    left:0;
+    z-index: -1;
+    width: 100%;
+}
+
+#fancy-header {
+  z-index: 1;
+  float: left;
+  margin-left: 50px;
+  font-family: 'berkshire swash', cursive; 
+  position: fixed;
+  top: 1em;
+  line-height: 0%;
+  background-color: transparent;
+  color: white;
+  padding: 0px;
+
+}
+
+
+.nav{
+    text-align: right;
+    position: absolute;
+    top: 0.25em;
+    right: 1em;
+    z-index:2;
+    margin:1em;
+    padding-top: 1.2em;
+    font-family: cursive;
+    font-size: 1.3em;
+  }
+  li{
+    display: inline;
+    float: bottom;
+    margin-left: 25px;
+    list-style: none;
+  }
+
+  /*main styles*/
+h1 {
+  font-size:42px;
+  color:red;
+}
+h2{
+  text-align: center;
+  font-size: 32px;
+}
+p {
+  font-size:22px;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: cursive;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  background: grey;
+  border-radius: 5%;
+  padding: 5px;
+}
+
+.me-image {
+  width: 30%;
+  position: static;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  display: block;
+  border: 3px solid grey;
+  border-radius: 10%;
+  box-shadow: 5px 10px 4px white;
+}
+.about-me {
+  background-color:rgb(86, 86, 86);
+  line-height: 26pt;
+  margin: 2em;
+  padding:20px;
+  border-radius: 10px;
+  width: 75%;
+  position: static;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.project-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 40px;
+}
+#projects{
+  margin-top: 180px;
+}
+#contact{
+  display:flex;
+  justify-content: space-evenly;
+  font-size: 18px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+@media (max-width: 500px){
+    #main-video { 
+        width:100%;
+        height: auto;
+    }
+}
