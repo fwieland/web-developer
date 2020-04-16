@@ -19,8 +19,7 @@
   padding: 0px;
 
 }
-
-
+/*header links*/
 .nav{
     text-align: right;
     position: absolute;
@@ -29,11 +28,9 @@
     z-index:2;
     margin:1em;
     padding-top: 0.5em;
-
   }
   li{
     display: inline;
-    float: bottom;
     margin-left: 25px;
     list-style: none;
   }
@@ -125,6 +122,8 @@ grid-template-columns: 50% 50%;
   margin-top: 100px;
   margin-bottom: 50px;
 }
+
+/*Responsive design; mobile, ipad*/
 @media screen and (max-width: 800px){
   #fancy-header{
     font-size: 0.75em;
@@ -137,14 +136,11 @@ grid-template-columns: 50% 50%;
     text-align: center;
     position: static;
     top: 4em;
-    z-index:2;
     margin-left: 50%;
     margin: 1em;
-    padding-top: 0.5em;
   }
   li{
     display: inline;
-    float: bottom;
     list-style: none;
   }
   ul{
