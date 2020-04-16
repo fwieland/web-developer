@@ -100,6 +100,9 @@ button {
   margin-right: auto;
   display: block;
 }
+.hire-me{
+  width: 33%;
+}
 .wrapper{
 display: grid;
 grid-template-columns: 50% 50%;
@@ -157,6 +160,9 @@ grid-template-columns: 50% 50%;
   #contact a{
     font-size: 1.5em;
     margin: 2em;
+  }
+  .hire-me{
+    width: 66%;
   }
 
 }
