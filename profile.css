@@ -1,5 +1,5 @@
 /*header & video background styles*/
-.top-background #main-video {
+.top-background, #main-video {
     position: static;
     left:0;
     z-index: -1;
@@ -26,12 +26,15 @@
     top: 0.25em;
     right: 1em;
     z-index:2;
-    margin:1em;
+    margin:1.5em;
     padding-top: 0.5em;
+    background-color: rgba(183, 183, 183, 0.2);
+    color: black;
+    border-radius: 5px;
   }
   li{
     display: inline;
-    margin-left: 25px;
+    margin: 1em;
     list-style: none;
   }
 
@@ -125,8 +128,8 @@ grid-template-columns: 50% 50%;
 
 /*Responsive design; mobile, ipad*/
 @media screen and (max-width: 800px){
-  #fancy-header{
-    font-size: 0.75em;
+  #fancy-header, h1{
+    color: transparent;
   }
   .me-image{
     width: 50%;
