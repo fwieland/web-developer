@@ -80,6 +80,13 @@ button {
   padding: 1em;
   width: 200px;
 }
+/*do not delete this time!*/
+.about-me{
+  background-color: grey;
+  border-radius: 5px;
+  width: 66%;
+  margin: 0 auto;
+}
 .me-image {
   width: 30%;
   position: static;
