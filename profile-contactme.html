@@ -7,64 +7,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <link rel="shortcut icon" href="https://i.imgur.com/JkkGuWm.png" />
-    <script src="https://use.fontawesome.com/493b8acd4c.js"></script>
-    <!--Google fonts, then my style sheet-->
-    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash&display=swap" rel="stylesheet">
-    <link href="profile.css" rel="stylesheet">
+    <!--script src="https://use.fontawesome.com/493b8acd4c.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash&display=swap" rel="stylesheet"-->
+    <link rel="stylesheet" type="text/css" href="C:/Users/Forrest/Documents/Coding/Profile/contact.css">
 </head>
     
 
     <body>
-        <div class="top-background" style="background-image: url('https://cdn.pixabay.com/photo/2019/12/13/09/46/umbrella-4692572_1280.jpg'); background-repeat: no-repeat;">
-        <!--Navigation Links header*-->
-        <nav id="navbar" class="nav">
-            <ul class="nav-list">
-                <li>
-                    <a href="profile.html">About</a>
-                </li>
-                <li>
-                    <a href="profile-projects.html">Projects</a>
-                </li>
-                <li>
-                    <a href="profile-contactme.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="contact-title">
+            <h1>To Get In Touch</h1>
+            <h2>Just Send A Message!</h2>
+        </div>
+
+        <div class="contact-form">
+        <form id="contact-form" action="https://formspree.io/fwieland90@gmail.com" method="post">
+            <input  class="form-control" type="text" name="name" id="full-name" placeholder="First & Last" required="">
+                <br>
+            <input class="form-control" type="email" name="_replyto" id="email-address" placeholder="example@email.com" required="">
+                <br>
+            <textarea class="form-control" rows="4" name="message" id="message" placeholder="Your message here" required=""></textarea>
+            <br>
+            <input class="form-control" type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            <input type="submit" class="form-control submit" value="Send Message">
+            </fieldset>
+        </form>
+        </div>
 
         <!--Contact Us form with formspree-->
-  <div class="about-me hire-me">
+  <!--div class="about-me hire-me">
     <h3>To Hire Me</h3>
     <p>Leave Me A Message!
     <br>Or Give Me A Call (720) 505-0302
     </p>
-    <form class="form-control" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/fwieland90@gmail.com" method="post">
-        <fieldset id="fs-frm-inputs" class="form-control">
-            <label for="full-name">Name</label><br>
-        <input  class="form-control" type="text" name="name" id="full-name" placeholder="First & Last" required="">
-            <br>
-            <label for="email-address">Email Address</label><br>
-        <input class="form-control" type="email" name="_replyto" id="email-address" placeholder="example@email.com" required="">
-            <br>
-            <label for="message">Message</label><br>
-        <textarea rows="5" name="message" id="message" placeholder="Your message here" required=""></textarea>
-        <br>
-        <input class="form-control" type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-        <input type="submit" value="Submit">
-        </fieldset>
-    </form>
-  </div>
 
+  </div-->
         <!--footer with links and font awesome-->
-        <footer>
+        <!--footer>
             <div class="contact-links" id="contact">
                <div><a href="https://www.freecodecamp.org/forrestwieland" target="_blank" class="btn contact-details"><i class="fa fa-free-code-camp" aria-hidden="true"></i>freeCodeCamp</a></div> 
                <div><a id="profile-link" href="fwieland478969326.wordpress.com/" target="_blank" class="btn contact-details"><i class="fa fa-wordpress" aria-hidden="true"></i> Wordpress</a></div> 
                 <div><a href="mailto:fwieland90@gmail.com" class="btn contact-details"><i class="fa fa-envelope-o" aria-hidden="true"></i> Send a Email</a></div>
                 <div><a href="tel:720-505-0302" class="btn contact-details"><i class="fa fa-phone" aria-hidden="true"></i> Call Me</a></div>
             </div>
-        </footer>
-
-    
+        </footer-->
     </body>
 
 </html>
