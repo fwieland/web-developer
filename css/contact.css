@@ -1,16 +1,14 @@
 body{
-    margin: 0;
-    padding:0;
     text-align: center;
     background-color: black;
-    background-image: url('umbrella-deepp.jpg');
+    background-image: url('C:/Users/Forrest/Documents/Coding/Profile/img/umbrella-deepp.jpg');
     background-size: cover;
     background-position: initial;
     background-repeat: no-repeat;
     z-index: -1;
     font-family: sans-serif;
     color: grey;
-    font-size: 20px;
+    font-size: 16.5px;
     background-position-y: 60px;
 }
 
@@ -24,7 +22,6 @@ h1, h2{
 }
 form{
     margin-top: 3rem;
-    transition: all 3s ease-in-out;
 }
 .form-control{
     width: 25rem;
