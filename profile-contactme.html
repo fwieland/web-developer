@@ -9,18 +9,56 @@
     <link rel="shortcut icon" href="https://i.imgur.com/JkkGuWm.png" />
     <!--script src="https://use.fontawesome.com/493b8acd4c.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash&display=swap" rel="stylesheet"-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="C:/Users/Forrest/Documents/Coding/Profile/contact.css">
 </head>
     
 
     <body>
-        <div class="contact-title">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand btn disabled" href="#">Forrest Wieland</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> 
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" 
+                        href="#" id="navbarDropdown" role="button" 
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Resume</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Biography</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=#>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=#>Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=#>Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+
+
+        <div class="contact-title text-center">
             <h1>To Get In Touch</h1>
             <h2>Just Send A Message!</h2>
         </div>
 
-        <div class="contact-form">
-        <form id="contact-form" action="https://formspree.io/fwieland90@gmail.com" method="post">
+        <div class="contact-form row d-flex justify-content-center">
+        <form id="contact-form col-md-6" action="https://formspree.io/fwieland90@gmail.com" method="post">
             <input  class="form-control" type="text" name="name" id="full-name" placeholder="First & Last" required="">
                 <br>
             <input class="form-control" type="email" name="_replyto" id="email-address" placeholder="example@email.com" required="">
@@ -33,23 +71,10 @@
         </form>
         </div>
 
-        <!--Contact Us form with formspree-->
-  <!--div class="about-me hire-me">
-    <h3>To Hire Me</h3>
-    <p>Leave Me A Message!
-    <br>Or Give Me A Call (720) 505-0302
-    </p>
+ 
 
-  </div-->
-        <!--footer with links and font awesome-->
-        <!--footer>
-            <div class="contact-links" id="contact">
-               <div><a href="https://www.freecodecamp.org/forrestwieland" target="_blank" class="btn contact-details"><i class="fa fa-free-code-camp" aria-hidden="true"></i>freeCodeCamp</a></div> 
-               <div><a id="profile-link" href="fwieland478969326.wordpress.com/" target="_blank" class="btn contact-details"><i class="fa fa-wordpress" aria-hidden="true"></i> Wordpress</a></div> 
-                <div><a href="mailto:fwieland90@gmail.com" class="btn contact-details"><i class="fa fa-envelope-o" aria-hidden="true"></i> Send a Email</a></div>
-                <div><a href="tel:720-505-0302" class="btn contact-details"><i class="fa fa-phone" aria-hidden="true"></i> Call Me</a></div>
-            </div>
-        </footer-->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 
 </html>

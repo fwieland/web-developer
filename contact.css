@@ -11,27 +11,23 @@ body{
     font-family: sans-serif;
     color: grey;
     font-size: 20px;
+    background-position-y: 60px;
 }
 
 .contact-title{
     margin-top: 6.25rem;
     color: white;
-    text-transform: uppercase;
-    transition: all 3s ease-out;
+    font-family: 'Roboto Slab', serif;
 }
-.contact-title h1{
-    font-size: 2rem;
-    line-height: 0.625rem;
-}
-.contact-title h2{
-    font-size: 1rem;
+h1, h2{
+    line-height: 5rem;
 }
 form{
     margin-top: 3rem;
     transition: all 3s ease-in-out;
 }
 .form-control{
-    width: 37.5rem;
+    width: 25rem;
     background: transparent;
     border: none;
     outline: none;
@@ -40,6 +36,9 @@ form{
     font-size: 1.125rem;
     margin-bottom: 0.625rem;
 }
+.navbar{
+    background-color: transparent;
+}
 input{
     height: 2.8rem;
 }
@@ -47,8 +46,18 @@ form .submit{
     background-color: rgba(109, 147, 107, 0.5);
     border: none;
     font-size: 1.25rem;
+    margin-bottom: 150px;
 }
 form .submit:hover{
     background-color:olivedrab;
     cursor: pointer;
+}
+
+@media screen and (max-width:625px){
+    .form-control{
+        width: 20rem;
+    }
+    form .submit{
+        margin-bottom: 75px;
+    }
 }
