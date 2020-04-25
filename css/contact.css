@@ -1,7 +1,7 @@
 body{
     text-align: center;
     background-color: black;
-    background-image: url('C:/Users/Forrest/Documents/Coding/Profile/img/umbrella-deepp.jpg');
+    background-image: url('../img/umbrella-deepp.jpg');
     background-size: cover;
     background-position: initial;
     background-repeat: no-repeat;
