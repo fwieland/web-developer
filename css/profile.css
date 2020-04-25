@@ -124,7 +124,7 @@ grid-template-columns: 50% 50%;
   padding: 3px;
 }
 #contact a:hover {
-  background: grey;
+  color: gray;
   border-radius: 5%;
   padding: 3px;
 }
@@ -172,5 +172,8 @@ grid-template-columns: 50% 50%;
     font-size: 1.5rem;
     margin: 0.66rem;
     background-color: olivedrab;
+  }
+  #contact a:hover {
+    color: black;
   }
 }
