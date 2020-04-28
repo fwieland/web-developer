@@ -73,7 +73,7 @@ ul {
 
 /*do not delete this time!*/
 .about-me, .background{
-  background-color: grey;
+  background-color: #343a40;
   border-radius: 5px;
   width: 66%;
   margin: 0 auto;

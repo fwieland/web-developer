@@ -5,15 +5,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+    <title>Resume</title>
     <link rel="shortcut icon" href="https://i.imgur.com/JkkGuWm.png" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="../css/contact.css" rel="stylesheet" type="text/css" >
+    <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="../css/resumestyle.css">
 </head>
     
 
-    <body>
+ <body id="top">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a class="navbar-brand btn disabled" href="#">Forrest Wieland</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,16 +29,17 @@
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
 
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Resume</a>
-                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Biography</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href=#>Projects</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="../html/contactme.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -45,7 +47,131 @@
 
 
 
- 
+<!--object src="somepage.pdf"><embed src="../Forrest_Wieland_Resume.docx."></embed></object-->
+<a href="../Forrest_Wieland_Resume.docx." download><div class="resume"><button type="button" class="resume btn btn-danger btn-large">Download Resume.docx</button></div></a>
+
+
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+<div id="cv" class="instaFade">
+	<div class="mainDetails">
+		<div id="headshot" class="quickFade">
+			<img src="..\img\web-dev-profile.JPG" alt="Forrest Wieland" />
+		</div>
+		
+		<div id="name">
+			<h1 class="quickFade delayTwo">Forrest Wieland</h1>
+			<h2 class="quickFade delayThree">Web Developer</h2>
+		</div>
+		
+		<div id="contactDetails" class="quickFade delayFour">
+			<ul>
+				<li><a href="mailto:joe@bloggs.com" target="_blank">fwieland90@gmail.com</a></li>
+				<li> <a href="http://www.linkedin.com/in/fwieland">linkedin.com/in/fwieland</a></li>
+				<li>(720) 505-0302</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div id="mainArea" class="quickFade delayFive">
+		<section>
+			<article>
+				<div class="sectionTitle">
+					<h1>Personal Profile</h1>
+				</div>
+				
+				<div class="sectionContent">
+					<p>Junior Web developer able to build web pages from scratch – from wireframes, html layout, css styling, navigation links, interactivity, and full design.  Skilled at building projects, uses the best practices, work is efficient and testable.  Passionate, fast learner, hard worker, and team player. 
+</p>
+				</div>
+			</article>
+			<div class="clear"></div>
+		</section>
+		
+
+		<section>
+			<div class="sectionTitle">
+				<h1>Technical Toolbox</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<ul class="keySkills">
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JavaScript</li>
+					<li>jQuery</li>
+					<li>Sass</li>
+					<li>Bootstrap</li>
+					<li>Github</li>
+					<li>Responsive Design</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</section>
+
+
+		<section>
+			<div class="sectionTitle">
+				<h1>Experience</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<h2>2020</h2>
+					<p class="subDetails">Currently</p>
+					<p>Studying Javascipt and jQuery. Will start Python shortly. I have learned advanced CSS concepts, responsive design, media-queries, modulars, mobile first build, high fidelity, bootstrap, image carousels, and inline validated forms. </p>
+				</article>
+				
+				<article>
+					<h2>2019</h2>
+					<p class="subDetails">What I aquired</p>
+					<p>Learned web development basics. From complete frontend; layout, styling, links, and alignment. Started javascript fundamentals. </p>
+				</article>
+				
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Education</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<h2>Texas A&M University</h2>
+					<p class="subDetails">Courses</p>
+					<p>Advanced CSS, Intro to Python, Intro to Bootstrap, Into to jQuery, Python Programming, Python Fundaments, Angular Fundamentals, Intro to ReactJS, React Router & Redux, MySQL, Python Django, Data Analysis, Visualization</p>
+				</article>
+				
+				<article>
+					<h2>Self Taught</h2>
+					<p class="subDetails">Qualifications</p>
+					<p>Designed, built projects, learned fundamentals. Used various resources; freecodecamp, codepen, Sololearn, Khan Academy. </p>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+	</div>
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3753241-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
