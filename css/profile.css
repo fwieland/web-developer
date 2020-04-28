@@ -132,7 +132,7 @@ grid-template-columns: 50% 50%;
 @media screen and (max-width: 800px){
   #fancy-header{
     position: absolute;
-    right: 80px;
+    float: left;
   }
   h1{
     position: static;
@@ -175,5 +175,10 @@ grid-template-columns: 50% 50%;
   }
   #contact a:hover {
     color: black;
+  }
+}
+@media screen and (max-width: 800px){
+  h1{
+    font-size: 1.75rem;
   }
 }
