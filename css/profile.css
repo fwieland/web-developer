@@ -78,11 +78,9 @@ ul {
   width: 66%;
   margin: 0 auto;
   margin-top: 5rem;
+  padding: 1.5rem;
+}
 
-}
-.about-me{
-  padding: 1rem;
-}
 
 
 .me-image {
