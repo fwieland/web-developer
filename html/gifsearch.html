@@ -9,16 +9,22 @@
     <link rel="shortcut icon" href="https://i.imgur.com/JkkGuWm.png" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="../css/contact.css" rel="stylesheet" type="text/css" >
+    <link href="../css/gifsearch.css" rel="stylesheet" type="text/css" >
 </head>
     
 
-    <body>
+    <body class="construction">
+
+  <!--api.giphy.com/v1/gifs/Forrests+Amazing+Gif+Finder&api_key=YOUR_API_KEYvoEUX20dXb64f46gtSfo1eF0HTlFL4PJ&limit=20-->
         <nav class="navbar navbar-expand-md">
-            <a class="navbar-brand btn disabled" href="#">Forrest Wieland</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button> 
+            <a class="navbar-brand" href="#">
+                <img src="../img/giphy-mario-gif.gif" width="130"  class="d-inline-block align-top" alt="Giphy logo">
+            </a>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search Giphy" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Enter</button>
+            
+            </form>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
@@ -46,30 +52,13 @@
 
 
 
-
-        <div class="contact-title text-center">
-            <h1>To Get In Touch</h1>
-            <h2>Just Send A Message!</h2>
-        </div>
-
-        <div class="contact-form row d-flex justify-content-center">
-        <form class="contact-form" action="https://formspree.io/fwieland90@gmail.com" method="post">
-            <input  class="form-control" type="text" name="name" id="full-name" placeholder="First & Last" required="">
-                <br>
-            <input class="form-control" type="email" name="_replyto" id="email-address" placeholder="example@email.com" required="">
-                <br>
-            <textarea class="form-control" rows="4" name="message" id="message" placeholder="Your message here" required=""></textarea>
-            <br>
-            <input class="form-control" type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-            <input type="submit" class="form-control submit" value="Send Message">
-            </fieldset>
-        </form>
-        </div>
+ 
 
  
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="../js/gifsearch.js"></script>
     </body>
 
 </html>

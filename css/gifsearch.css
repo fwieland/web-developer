@@ -1,7 +1,6 @@
 body{
     text-align: center;
     background-color: black;
-    background-image: url('../img/umbrella-deepp.jpg');
     background-size: cover;
     background-position: initial;
     background-repeat: no-repeat;
@@ -25,20 +24,12 @@ h1, h2{
 form{
     margin-top: 3rem;
 }
-a {
-    color: white;
-}
 .form-control{
     width: 25rem;
-    background: transparent;
     border: none;
     outline: none;
-    border-bottom: 1px solid;
     color: white;
-    font-size: 1.125rem;
-    margin-bottom: 0.625rem;
 }
-
 input{
     height: 2.8rem;
 }
@@ -52,19 +43,7 @@ form .submit:hover{
     background-color:olivedrab;
     cursor: pointer;
 }
-.construction{
-    background-image: url("../img/under-construction.jpg");
-    z-index: 7;
-}
-#professional-image{
-    background-image: url('#');
-    background-color: transparent;
-    height: 300px;
-    border-radius: 50%;
-    border-width: 5px;
-    border-color: slategrey;
-    z-index: 1;
-}
+
 @media screen and (max-width:625px){
     .form-control{
         width: 20rem;
