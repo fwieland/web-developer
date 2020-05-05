@@ -11,7 +11,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 display:block;
 }
 
-html, body {background: #181818; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #222;}
+html, body {background: black; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #222;}
 
 .clear {clear: both;}
 
@@ -24,8 +24,12 @@ html, body {background: #181818; font-family: 'Lato', helvetica, arial, sans-ser
 .navbar{
     background-color: rgb(24,24,26);
 }
+a{
+  text-decoration: none;
+  color: white;
+}
 a:hover{
-	text-decoration: none;
+  color: grey;
 }
 
 p {
@@ -168,11 +172,13 @@ section:last-child {
 	margin-bottom: 3px;
 }
 
-@media all and (min-width: 602px) and (max-width: 800px) {
+@media all and (max-width: 800px) {
 	#headshot {
 		display: none;
 	}
-	
+	.navbar-toggler-icon{
+	background-image: url('../img/hamburger-toggle-mini.png');
+}
 	.keySkills {
 	-moz-column-count:2;
 	-webkit-column-count:2;

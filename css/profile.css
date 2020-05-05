@@ -68,6 +68,9 @@ a{
   color: white;
   margin: -7px;
 }
+a:hover{
+  color: grey;
+}
 ul {
   line-height: 0.5em;
   font-size: 1.1em;
@@ -129,7 +132,7 @@ grid-template-columns: 50% 50%;
 
 
 /*Responsive design; mobile, ipad*/
-@media screen and (max-width: 800px){
+@media screen and (max-width: 768px){
   #fancy-header{
     position: absolute;
     float: left;
@@ -178,6 +181,9 @@ grid-template-columns: 50% 50%;
     color: black;
   }
 }
+  .navbar-toggler-icon{
+      background-image: url('../img/hamburger-toggle-mini.png');
+  }
 @media screen and (max-width: 800px){
   h1{
     font-size: 1.75rem;
