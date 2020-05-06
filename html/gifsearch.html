@@ -13,18 +13,12 @@
 </head>
     
 
-    <body class="construction">
+<body>
 
-  <!--api.giphy.com/v1/gifs/Forrests+Amazing+Gif+Finder&api_key=YOUR_API_KEYvoEUX20dXb64f46gtSfo1eF0HTlFL4PJ&limit=20-->
-        <nav class="navbar navbar-expand-md">
-            <a class="navbar-brand" href="#">
-                <img src="../img/giphy-mario-gif.gif" width="130"  class="d-inline-block align-top" alt="Giphy logo">
-            </a>
-            <!--form class="form-inline my-2 my-lg-0">
-                <input id="search" class="form-control mr-sm-2" type="search" placeholder="Search Giphy" aria-label="Search">
-                <button id="btnSearch"class="btn btn-outline-success my-2 my-sm-0" type="search">Enter</button>
-            
-            </form-->
+    <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand" href="#">
+            <img src="../img/giphy-mario-gif.gif" width="130"  class="d-inline-block align-top" alt="Giphy logo">
+        </a>
 
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -36,16 +30,16 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" 
                     href="#" id="navbarDropdown" role="button" 
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
 
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="resume.html">Resume</a>
+                                <a class="dropdown-item" href="#">Giphy App</a>
                                 <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="biography.html">Biography</a>
+                        <a class="dropdown-item" href="https://fwieland.github.io/CMPCO/html/homepage.html" target="_blank">CMP CO</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="projects.html">Projects</a>
+                    <a class="nav-link" href="resume.html">Resume</a>
                 </li>
                 <li class="nav-item">
                         <a class="nav-link" href="contactme.html">Contact</a>
@@ -54,80 +48,32 @@
         </div>
     </nav>
 
-<!--div class="out"></div--> 
-
-
-
-<div class="container">
-    <form id="searchForm">
-        <div class="input-group mb-3">
-            <input id="searchInput" type="text" class="form-control" placeholder="Search for a gifs"
-                   aria-label="Recipient's username"
-                   aria-describedby="button-addon2">
-            <div class="input-group-append">
-                <button class="btn btn-outline-secondary" id="searchButton">Search</button>
+<!--Giphy seach form & containers for results-->
+    <div class="container">
+        <form id="searchForm">
+            <div class="input-group mb-3">
+                <input id="searchInput" type="text" class="form-control" placeholder="Search For Giphs"
+                    aria-label="Recipient's username"
+                    aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" id="searchButton">Search</button>
+                </div>
             </div>
-        </div>
-    </form>
+        </form>
 
-    <div id="thumbs">
+        <div id="thumbs"></div>
 
     </div>
 
-</div>
-<div class="loader-wrapper">
-    <div class="lds-circle"><div></div></div>
-</div>
+    <div class="loader-wrapper">
+        <div class="lds-circle"><div></div></div>
+    </div>
 
  
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="../js/gifsearch.js"></script>
 
- 
-
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script src="../js/gifsearch.js"></script>
-
-
-
-        <script>    /*
-            var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=funny&api_key=voEUX20dXb64f46gtSfo1eF0HTlFL4PJ&limit=12");
-    xhr.done(function(data) { console.log("success got data", data); }); 
-      let APIKEY = "voEUX20dXb64f46gtSfo1eF0HTlFL4PJ";
-      // https://developers.giphy.com/dashboard/
-      document.addEventListener("DOMContentLoaded", init);
-      function init() {
-        document.getElementById("btnSearch").addEventListener("click", ev => {
-          ev.preventDefault(); //to stop the page reload
-          let url = `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=12&q=`;
-          let str = document.getElementById("search").value.trim();
-          url = url.concat(str);
-          console.log(url);
-          fetch(url)
-            .then(response => response.json())
-            .then(content => {
-              //  data, pagination, meta
-              console.log(content.data);
-              console.log("META", content.meta);
-              let fig = document.createElement("figure");
-              let img = document.createElement("img");
-              let fc = document.createElement("figcaption");
-              img.src = content.data[0].images.downsized.url;
-              img.alt = content.data[0].title;
-              fc.textContent = content.data[0].title;
-              fig.appendChild(img);
-              fig.appendChild(fc);
-              let out = document.querySelector(".out");
-              out.insertAdjacentElement("afterbegin", fig);
-              document.querySelector("#search").value = "";
-            })
-            .catch(err => {
-              console.error(err);
-            });
-        });
-      }
-//You need to create multiple img tags inside the loop and give //them each a unique src.
-*/
-        </script> 
-    </body>
+</body>
 
 </html>
