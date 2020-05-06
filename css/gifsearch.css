@@ -25,12 +25,7 @@ h1, h2{
 form{
     margin-top: 3rem;
 }
-.form-control{
-    width: 25rem;
-    border: none;
-    outline: none;
-    color: white;
-}
+
 
 a{
   text-decoration: none;
@@ -40,29 +35,36 @@ a:hover{
   color: grey;
 }
 
-
+.container{
+display: inline-block;
+margin-left: 0;
+margin-right: 0;
+}
 #thumbs{
     margin-left: -6px;
     margin-right: -6px;
 }
 
 .img-wrapper{
-    display: table;
     height: 140px;
     width: 200px;
-    table-layout: fixed;
-    float: left;
+
+  display: inline-block;
+  margin-right: 0 auto;
+  margin-left: 0 auto;
     padding-left: 6px;
     padding-right: 6px;
     margin-bottom: 12px;
 }
+   /*     table-layout: auto;
+     */
 .outer{
     height: 100%;
 }
 .inner{
     padding: 5px;
     border-radius: 6px;
-    border: 1px solid #e6e6e6;
+    border: 1px solid #343a40;
     display: table-cell;
     width: 100%;
     vertical-align: middle;
@@ -82,7 +84,7 @@ a:hover{
     top: 0;
     bottom: 0;
     z-index: 20000;
-    background: rgba(255, 255, 255, 1);
+    background: #343a40;
 }
 .loader-wrapper.shown{
     display: block;
@@ -107,6 +109,11 @@ a:hover{
   background: #aaaaaa;
   animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
+/*.reset-button{
+display: flex;
+justify-content: flex-end;
+margin-right: 23%;
+}*/
 @keyframes lds-circle {
   0%, 100% {
     animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);

@@ -51,17 +51,22 @@
 <!--Giphy seach form & containers for results-->
     <div class="container">
         <form id="searchForm">
-            <div class="input-group mb-3">
+            <div class="input-group col-md-7 mb-2 mx-auto">
                 <input id="searchInput" type="text" class="form-control" placeholder="Search For Giphs"
                     aria-label="Recipient's username"
                     aria-describedby="button-addon2">
                 <div class="input-group-append">
                     <button class="btn btn-outline-secondary" id="searchButton">Search</button>
                 </div>
+
+
             </div>
         </form>
+                <!--div class="reset-button">
+                    <button class="btn btn-outline-danger" id="reset">Reset</button>
+                </div-->
 
-        <div id="thumbs"></div>
+    <div id="thumbs"></div>
 
     </div>
 
@@ -69,10 +74,22 @@
         <div class="lds-circle"><div></div></div>
     </div>
 
+
  
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="../js/gifsearch.js"></script>
+
+<script> 
+$( "#searchButton" ).click(function() {
+  $( ".inner, .img-wrapper" ).remove();
+});
+
+$('input:text').click(
+    function(){
+        $(this).val('');
+    });
+ </script>
 
 </body>
 

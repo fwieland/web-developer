@@ -33,16 +33,9 @@ function gotData(giphy) {
     $('#thumbs').append($div)
   }
 
-  function showLoader() {
-    $('.loader-wrapper').addClass('shown');
-  }
-
-  function hideLoader() {
-    $('.loader-wrapper').removeClass('shown');
-  }
 
   (function listenOnFormSubmit() {
-    $('#searchForm').submit((ev) => {
+    $('#searchForm').submit(async(ev) => {
       ev.preventDefault();
       let $input = $('#searchInput');
 
