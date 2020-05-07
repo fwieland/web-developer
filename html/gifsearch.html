@@ -15,14 +15,13 @@
 
 <body>
 
+<!--Navigation Header-->
     <nav class="navbar navbar-expand-md">
         <a class="navbar-brand" href="#">
             <img src="../img/giphy-mario-gif.gif" width="130"  class="d-inline-block align-top" alt="Giphy logo">
         </a>
-
-
+        <span class="navbar-toggler-icon"></span>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
             <ul class="navbar-nav ml-auto">
                                     <li class="nav-item">
                             <a class="nav-link" href="../index.html">Home</a>
@@ -31,7 +30,6 @@
                     <a class="nav-link dropdown-toggle" 
                     href="#" id="navbarDropdown" role="button" 
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
-
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">Giphy App</a>
                                 <div class="dropdown-divider"></div>
@@ -48,30 +46,26 @@
         </div>
     </nav>
 
-<!--Giphy seach form & containers for results-->
+<!--Giphy seach form-->
     <div class="container">
         <form id="searchForm">
             <div class="input-group col-md-7 mb-2 mx-auto">
-                <input id="searchInput" type="text" class="form-control" placeholder="Search For Giphs"
+                <input id="searchInput" type="text" class="form-control" placeholder="Search Giphs"
                     aria-label="Recipient's username"
                     aria-describedby="button-addon2">
                 <div class="input-group-append">
                     <button class="btn btn-outline-secondary" id="searchButton">Search</button>
                 </div>
-
-
             </div>
         </form>
-                <!--div class="reset-button">
-                    <button class="btn btn-outline-danger" id="reset">Reset</button>
-                </div-->
-
-    <div id="thumbs"></div>
-
+        <!--Where Gifs Appear-->
+        <div class="container">
+            <div id="thumbs" class='row justify-content-center'>
+        </div></div>
     </div>
 
     <div class="loader-wrapper">
-        <div class="lds-circle"><div></div></div>
+        </div></div>
     </div>
 
 
