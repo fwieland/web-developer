@@ -24,7 +24,7 @@ function gotData(giphy) {
 (function () {
   function giphySearch(keyword) {
     // Make a request to giphy API here
-    return fetch(`http://api.giphy.com/v1/gifs/search?q=${keyword}&api_key=voEUX20dXb64f46gtSfo1eF0HTlFL4PJ&limit=15`).then(response => response.json())
+    return fetch(`https://api.giphy.com/v1/gifs/search?q=${keyword}&api_key=voEUX20dXb64f46gtSfo1eF0HTlFL4PJ&limit=15`).then(response => response.json())
   }
 
   function appendImage(img) {
