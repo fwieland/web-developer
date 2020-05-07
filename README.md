@@ -1,20 +1,22 @@
-# Profile Webpage
-This is my Professional Web Developer Profile Website. 
+# Forrest Wieland
 
-Hello! My name is Forrest Wieland. I am based out of Colorado Springs, CO. 
+https://fwieland.github.io/Profile/
 
-I love coding, it is my passion, I can spend countless hours when working on a project.
-I have been studying code for almost a year now. I was doing the research and the math, and I recently 
-decided to quit working full time in order to start a coding bootcamp and get a jumpstart into this amazing field.
+**Profile Webpage**
 
-I am now really pushing myself to land a paid internship while finishing school! This is my dream. 
+I am currently looking for an internship or entry level web developer job. 
 
-This is my self titled Profile Page. Which showcases what I have done.
+I love coding, it is my passion, I can spend countless hours when working on a project. 
+I have been studying code for a year now.
+I was doing the research and the math, and I decided to quit working full time in order to start school.
+I am really hoping to land a paid internship while going to school! 
+                
+This profile page showcases what projects I have done and some of the skills I have acquired so far.
 It is only from here that I will go up, as I am learning so very much everyday in coding.
-
-I hope you are pleased at my profile, 
-And I hope to hear from you soon.
+                
+I hope you are pleased at my profile, And I hope to hear from you soon.
 
 Sincerely,
+
 
 Forrest Wieland
