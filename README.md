@@ -1,6 +1,6 @@
 # Forrest Wieland
 
-https://fwieland.github.io/Profile/
+https://fwieland.github.io/web-developer/
 
 **Profile Webpage**
 
