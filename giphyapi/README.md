@@ -1,28 +1,30 @@
-# Forrest Wieland
+# creator Forrest Wieland
 
-**https://fwieland.github.io/Profile/giphyapi/gifsearch.html
-**
-This is a custom project of making a functioning website using an api to upload
-gifs from GIPHY.com  
+**https://fwieland.github.io/Profile/giphyapi/gifsearch.html**
+This is a custom api project using a giphy.com api. 
 
   **Functionality:**
 To use: just type in search bar what gifs you would like to see and press enter
-or click on submit, & 16 results will pop up.
+or click on submit, & 12 results will pop up.
 
+**OR** you can select how many gifs you would like by simply selecting from the drop down menu below the search bar. 
+
+**Also**
 When you re-click on search bar the text will empty.
-When you press enter, the old search will disappear and the new one will appear.
+When you press enter or click search, the old search will disappear and the new one will appear.
 
 
-  **To make this Possible**
-I used HTML to mark up the page. 
-CSS for additional styling. 
-Bootstrap for header and positioning properties. 
-JavaScript to connect the search bar to giphy, to make it functional. 
-  JS inserts a div to place the returned api search.  
-jQuery to make the old search disappear, and entered text to disappear in search bar
+  **Technologies used to make this Possible**
+HTML 
+CSS  
+Bootstrap
+JavaScript 
+JS 
+jQuery 
+API
 
 
   **Future Improvements**
 More links to and from site (SEO)
-Make a auto search of gifs upon entering
+Make a auto search of gifs upon entering site
 Add a footer
