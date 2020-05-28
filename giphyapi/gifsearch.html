@@ -5,8 +5,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giphy App</title>
-    <link rel="shortcut icon" href="https://i.imgur.com/JkkGuWm.png" />
+    <title>Giphy Api Web-App responsive mobile friendly</title>
+    <link rel="shortcut icon" href="https://imgur.com/JkkGuWm.png" />
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="../css/style.css" rel="stylesheet" type="text/css" >
@@ -57,15 +57,32 @@
                     aria-label="Recipient's username"
                     aria-describedby="button-addon2">
                 <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" id="searchButton">Search</button>
+                    <button class="btn btn-outline-success" id="searchButton">Search</button>
                 </div>
+            </div>
+            <div class="nog">
+                <label class="Number-The-Gifs">Number of GIFs</label>
+                <select id="gif-Num">
+                                        <option value="1">1</option>
+                    <option value="4">4</option>
+                    <option value="8">8</option>
+                    <option value="12" selected="selected">12</option>
+                    <option value="16">16</option>
+                    <option value="24">24</option>
+                    <option value="36">36</option>
+                </select>
             </div>
         </form>
         <!--Where Gifs Appear-->
         <div class="container">
-            <div id="thumbs" class='row justify-content-center'>
+            <div id="thumbs" class='row justify-content-center'> 
         </div><h3>GIPHY Search API</h3><h4>Bringing You The Best Gifs</h4></div>
     </div>
+
+
+
+
+
 
     <div class="loader-wrapper">
         </div></div>
@@ -77,17 +94,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="gifsearch.js"></script>
 
-<script> 
-//jQuery for clearing results for new search
-$( "#searchButton" ).click(function() {
-  $( ".inner, .img-wrapper" ).remove();
-});
-//deletes inputed text on click
-$('input:text').click(
-    function(){
-        $(this).val('');
-    });
- </script>
 
 </body>
 
