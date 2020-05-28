@@ -7,7 +7,7 @@ This is a custom api project using a giphy.com api.
 To use: just type in search bar what gifs you would like to see and press enter
 or click on submit, & 12 results will pop up.
 
-**OR** you can select how many gifs you would like by simply selecting from the drop down menu below the search bar. 
+**And** you can select how many gifs you would like by simply selecting from the drop down menu below the search bar. 
 
 **Also**
 When you re-click on search bar the text will empty.
