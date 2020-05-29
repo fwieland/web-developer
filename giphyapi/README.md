@@ -1,7 +1,14 @@
 # creator Forrest Wieland
 
+<<<<<<< HEAD
 **https://fwieland.github.io/Profile/giphyapi/gifsearch.html**
 This is a custom api project using a giphy.com api. 
+=======
+**https://fwieland.github.io/web-developer/giphyapi/gifsearch.html
+**
+This is a custom project of making a functioning website using an api to upload
+gifs from GIPHY.com  
+>>>>>>> 28a2608510cc17254d46a09fc311eeb24ce7b074
 
   **Functionality:**
 To use: just type in search bar what gifs you would like to see and press enter

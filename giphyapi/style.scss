@@ -90,7 +90,12 @@ a {
   z-index: 20000;
   background: #343a40;
 }
-
+@media screen and (max-width: 1080px) {
+  .inner img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
 @media screen and (max-width: 768px) {
   .form-control {
     width: 20rem;
