@@ -1,6 +1,6 @@
 # Forrest Wieland
 
-**https://fwieland.github.io/Profile/giphyapi/gifsearch.html
+**https://fwieland.github.io/web-developer/giphyapi/gifsearch.html
 **
 This is a custom project of making a functioning website using an api to upload
 gifs from GIPHY.com  
