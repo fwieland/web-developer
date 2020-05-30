@@ -1,31 +1,31 @@
-# creator Forrest Wieland
+# creator- Forrest Wieland
 
 
 
 **https://fwieland.github.io/web-developer/giphyapi/gifsearch.html**  
+
 Custom API project
 
 
-  **Functionality:**  
+**Functionality:**  
 To use: just type in search bar what gifs you would like to see and press enter
-or click on submit, & 12 results will pop up.
+or click on submit, & 12 results will pop up.  
 
 **And**  
-you can select how many gifs you would like by simply selecting from the drop down menu below the search bar. 
+You can select how many gifs you would like by simply selecting from the drop down menu below the search bar.  
 
 **Also**  
-When you re-click on search bar the text will empty.  
-When you press enter or click search, the old search will disappear and the new one will appear.  
+When you click on search bar the previously entered text will disappear.  
+When you press enter or click search, the old gifs will be replaced by the new ones.  
 
   
   **Technologies used to make this Possible**  
-HTML,   
-CSS,   
-Bootstrap,  
-JavaScript,  
-JS,  
-jQuery,   
-API.  
+HTML   
+CSS   
+Bootstrap  
+JavaScript    
+jQuery   
+API  
 
   
   **Future Improvements**  
