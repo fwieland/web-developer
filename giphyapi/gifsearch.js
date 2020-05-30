@@ -7,19 +7,15 @@ $('input:text').click(
     function(){
         $(this).val('');
     });
-
-//gif # selector 
-let numGifs = '12';
-
 $("#gif-Num").on('change', function(){
   numGifs = $(this).val();
 })
 
-
+//gif # selector 
+let numGifs = 12;
 
 function errorHandling() {
-    thumbs.innerHTML = `
-    <li class="error">Error loading... check connection</li>`;
+    alert("Error: Check Network Connection.");
 }
 (function () {
   function giphySearch(keyword) {
@@ -28,36 +24,31 @@ function errorHandling() {
     .catch( errorHandling );
   }
 
-
   function appendImage(img) {
     let $div = $('<div class="img-wrapper col-auto"></div>');
     $('<div class="inner"></div>').append(img).appendTo($div);
     $('#thumbs').append($div)
   }
 
-
   (function listenOnFormSubmit() {
     $('#searchForm').submit(async(ev) => {
       ev.preventDefault();
       let $input = $('#searchInput');
-
       main($input.val());
     });
-    
   })();
 
   async function main(searchKeyword) {
     const result = await giphySearch(searchKeyword);
-    $('thumbs').html('');
-    result.data.forEach(data => {
-        let img = new Image();
-        img.src = data.images.original.url;
-        appendImage(img);
-    })
+
+    if ( typeof result === 'object' && Array.isArray(result.data) ) {
+        result.data.forEach(data => {
+            let img = new Image();
+            img.src = data.images.original.url;
+            appendImage(img);
+        })
+    } else {
+        alert("Application failed to load data.");
+    }
   }
 })();
-
-
-/*
-voEUX20dXb64f46gtSfo1eF0HTlFL4PJ
-*/

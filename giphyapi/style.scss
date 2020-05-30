@@ -6,7 +6,7 @@ body {
   background-repeat: no-repeat;
   z-index: -1;
   font-family: sans-serif;
-  color: grey;
+  color: lightgrey;
   font-size: 16.5px;
   background-position-y: 60px;
 }
@@ -25,10 +25,7 @@ body {
 h1, h2, h3, h4 {
   line-height: 2.5rem;
   font-family: 'Heebo', sans-serif;
-}
-
-form {
-  margin-top: 3rem;
+  margin: 0.5rem;
 }
 
 .error {
@@ -37,7 +34,6 @@ form {
 a {
   text-decoration: none;
   color: white;
-
   &:hover {
     color: grey;
   }
